@@ -3,7 +3,9 @@ import { ref } from "vue";
 import { LOCALSTORAGE } from "../constants";
 
 export const useAuthStore = defineStore("auth", () => {
-  const isAuthenticated = ref(false);
+  const isAuthenticated = ref(
+    localStorage.getItem(LOCALSTORAGE.isAuthenticated) === "true"
+  );
   console.log("🚀 ~ useAuthStore ~ isAuthenticated:", isAuthenticated.value);
 
   const login = () => {
