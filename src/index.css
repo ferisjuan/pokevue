@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .poke-input {
+    @apply input-bordered input-info input mb-4 w-full max-w-xs;
+  }
+  .poke-input-label {
+    @apply label-text label prose text-sm;
+  }
+  .poke-input-message {
+    @apply prose-sm prose text-red-500;
+  }
+  .poke-btn-primary {
+    @apply btn-primary btn-sm btn w-24;
+  }
+}

@@ -1,14 +1,16 @@
 <template>
-  <main class="container flex flex-col items-center">
+  <main class="container my-16 flex flex-col items-center">
     <h1 class="text-4xl font-bold">Login</h1>
     <FormKit
       :actions="false"
-      :form-class="submitted ? 'hide' : 'show'"
       @submit="handleSubmit"
       submit-label="Login"
       type="form"
     >
       <FormKit
+        label-class="poke-input-label"
+        input-class="poke-input"
+        message-class="poke-input-message"
         label="Username"
         name="username"
         placeholder="ash@pokemon.com"
@@ -17,6 +19,8 @@
       />
       <FormKit
         autocomplete="on"
+        input-class="poke-input"
+        message-class="poke-input-message"
         label="Password"
         name="password"
         placeholder="***"
@@ -24,18 +28,15 @@
         validation="required|length:6"
       />
 
-      <FormKit label="Login" type="submit" />
+      <FormKit input-class="poke-btn-primary" label="Login" type="submit" />
     </FormKit>
   </main>
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from "vue-router";
 import { FormKit } from "@formkit/vue";
-import { ref } from "vue";
+import { useRouter } from "vue-router";
 import { useAuthStore } from "../store";
-
-const submitted = ref(false);
 
 const router = useRouter();
 
