@@ -6,7 +6,6 @@ export const useAuthStore = defineStore("auth", () => {
   const isAuthenticated = ref(
     localStorage.getItem(LOCALSTORAGE.isAuthenticated) === "true"
   );
-  console.log("🚀 ~ useAuthStore ~ isAuthenticated:", isAuthenticated.value);
 
   const login = () => {
     localStorage.setItem(LOCALSTORAGE.isAuthenticated, "true");
@@ -16,7 +15,6 @@ export const useAuthStore = defineStore("auth", () => {
   const logout = () => {
     localStorage.removeItem(LOCALSTORAGE.isAuthenticated);
     isAuthenticated.value = false;
-    console.log("🚀 ~ logout ~ isAuthenticated.value:", isAuthenticated.value);
   };
 
   return { isAuthenticated, login, logout };

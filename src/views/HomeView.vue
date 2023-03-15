@@ -1,8 +1,12 @@
 <template>
-  <main class="container prose">
-    <h1 class="text-4xl font-bold">Home</h1>
-    <p class="text-xl">This is the home page</p>
+  <main class="container">
+    <h1 class="prose my-4 text-4xl font-bold">Pokemons!</h1>
+    <Suspense>
+      <PokeTable />
+    </Suspense>
   </main>
 </template>
-<script></script>
 
+<script lang="ts" setup>
+import PokeTable from "../components/PokeTable.vue";
+</script>
