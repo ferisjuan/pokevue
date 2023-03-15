@@ -22,8 +22,8 @@
               <span class="prose text-3xl capitalize">{{ pokemon.name }}</span>
             </article>
           </td>
-          <td>{{ pokemon.height }}</td>
-          <td>{{ pokemon.weight }}</td>
+          <td>{{ pokemon.height }} In</td>
+          <td>{{ pokemon.weight }} lb</td>
           <td>
             <ul class="flex flex-wrap gap-1">
               <li v-for="type in pokemon.types" :key="type.type.name">
