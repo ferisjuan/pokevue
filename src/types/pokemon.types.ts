@@ -18,6 +18,7 @@ export interface Pokemon {
   height: number;
   held_items: any[];
   id: number;
+  isFavorite: boolean;
   is_default: boolean;
   location_area_encounters: string;
   moves: Move[];

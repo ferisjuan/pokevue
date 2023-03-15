@@ -8,6 +8,7 @@
         <tr>
           <th class="prose">No.</th>
           <th class="prose">Name</th>
+          <th class="prose">Favorite</th>
           <th class="prose">Height</th>
           <th class="prose">Weight</th>
           <th class="prose">Types</th>
@@ -41,6 +42,18 @@
               </div>
               <span class="prose text-3xl capitalize">{{ pokemon.name }} </span>
             </article>
+          </td>
+          <td>
+            <label className="swap">
+              <input
+                aria-label="favorite"
+                :checked="pokemon.isFavorite"
+                type="checkbox"
+                @change="toggleFavoritePokemon(pokemon.id)"
+              />
+              <div className="swap-on text-5xl">😍</div>
+              <div className="swap-off text-5xl">🫥</div>
+            </label>
           </td>
           <td class="prose">{{ pokemon.height }} In</td>
           <td class="prose">{{ pokemon.weight }} lb</td>
@@ -90,7 +103,7 @@ import { usePokemonStore } from "../store";
 import PokeType from "./PokeType.vue";
 
 const pokemonStore = usePokemonStore();
-const { fetchPokemonPage } = pokemonStore;
+const { fetchPokemonPage, toggleFavoritePokemon } = pokemonStore;
 await fetchPokemonPage(1);
 
 const { page, pokemons, totalPages } = storeToRefs(pokemonStore);

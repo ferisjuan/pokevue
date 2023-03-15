@@ -11,6 +11,11 @@ export const usePokemonStore = defineStore("pokemon", () => {
   const pages = ref(new Map<number, Pokemon[]>());
   const totalPages = ref(0);
 
+  const FAVORITE_KEY = "favorites";
+  const _favorites = localStorage.getItem(FAVORITE_KEY);
+  const favoritesList = _favorites ? JSON.parse(_favorites) : [];
+  const favoritePokemons = ref<number[]>(favoritesList);
+
   const pokemons = ref<Pokemon[]>([]);
 
   const fetchPokemonsList = async (): Promise<void> => {
@@ -34,7 +39,8 @@ export const usePokemonStore = defineStore("pokemon", () => {
     const response = await fetch(url);
     const data = await response.json();
 
-    pokemons.value.push(data);
+    const isFavorite = !!favoritePokemons.value.includes(data.id);
+    pokemons.value.push({ ...data, isFavorite });
   };
 
   const fetchPokemonPage = async (_page: number): Promise<void> => {
@@ -54,11 +60,31 @@ export const usePokemonStore = defineStore("pokemon", () => {
     fetchPokemonsList();
   };
 
+  const toggleFavoritePokemon = (pokemonId: number): void => {
+    if (_favorites) {
+      if (favoritesList.includes(pokemonId)) {
+        const index = favoritesList.indexOf(pokemonId);
+        console.log("🚀 ~ toggleFavoritePokemon ~ index:", index);
+
+        favoritesList.splice(index, 1);
+      } else {
+        favoritesList.push(pokemonId);
+        favoritePokemons.value = favoritesList;
+      }
+
+      localStorage.setItem(FAVORITE_KEY, JSON.stringify(favoritesList));
+    } else {
+      localStorage.setItem(FAVORITE_KEY, JSON.stringify([pokemonId]));
+      favoritePokemons.value = [pokemonId];
+    }
+  };
+
   return {
     count,
     fetchPokemonPage,
     page,
     pokemons,
+    toggleFavoritePokemon,
     totalPages,
   };
 });
