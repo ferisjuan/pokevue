@@ -6,7 +6,7 @@
           :to="{ name: 'home' }"
           class="flex items-center py-4 px-2 text-gray-100"
         >
-          <span class="text-xl font-bold tracking-tight">Pokevue</span>
+          <span class="prose text-xl font-bold tracking-tight">Pokevue</span>
         </RouterLink>
       </div>
 
@@ -15,7 +15,8 @@
           <li>
             <RouterLink
               :to="{ name: 'home' }"
-              class="border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              active-class="text-gray-100"
             >
               Home
             </RouterLink>
@@ -23,7 +24,7 @@
           <li>
             <a
               href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
-              class="border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
               target="_blank"
               >Contact</a
             >
@@ -31,7 +32,7 @@
           <li>
             <RouterLink
               :to="{ name: 'auth' }"
-              class="border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
               v-show="isAuthenticated"
               @click="logout()"
             >

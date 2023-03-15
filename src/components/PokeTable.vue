@@ -3,10 +3,10 @@
     <table class="table w-full">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Height</th>
-          <th>Weight</th>
-          <th>Types</th>
+          <th class="prose">Name</th>
+          <th class="prose">Height</th>
+          <th class="prose">Weight</th>
+          <th class="prose">Types</th>
         </tr>
       </thead>
 
@@ -22,8 +22,8 @@
               <span class="prose text-3xl capitalize">{{ pokemon.name }}</span>
             </article>
           </td>
-          <td>{{ pokemon.height }} In</td>
-          <td>{{ pokemon.weight }} lb</td>
+          <td class="prose">{{ pokemon.height }} In</td>
+          <td class="prose">{{ pokemon.weight }} lb</td>
           <td>
             <ul class="flex flex-wrap gap-1">
               <li v-for="type in pokemon.types" :key="type.type.name">
