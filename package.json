@@ -3,6 +3,7 @@
     "name": "Juan Feris",
     "github": "ferisjuan"
   },
+  "license": "MIT",
   "name": "pokevue",
   "version": "0.0.0",
   "scripts": {
