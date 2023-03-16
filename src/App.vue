@@ -25,6 +25,5 @@ import { RouterView } from "vue-router";
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-  transform: translateX(100%);
 }
 </style>
