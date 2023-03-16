@@ -1,16 +1,13 @@
 <template>
   <main
     class="flex w-full flex-col items-center overflow-auto"
-    v-if="pokemons.length > 0"
+    v-if="favoritePokemonsList.length > 0"
   >
     <table class="table w-full">
       <thead>
         <tr>
           <th class="prose">No.</th>
           <th class="prose">Name</th>
-          <th class="prose">Favorite</th>
-          <th class="prose">Height</th>
-          <th class="prose">Weight</th>
           <th class="prose">Types</th>
           <th class="prose">Details</th>
         </tr>
@@ -18,7 +15,9 @@
 
       <tbody>
         <tr
-          v-for="pokemon in pokemons.sort((a, b) => (a.id > b.id ? 1 : -1))"
+          v-for="pokemon in favoritePokemonsList.sort((a, b) =>
+            a.id > b.id ? 1 : -1
+          )"
           :key="pokemon.id"
         >
           <td>{{ String(pokemon.id).padStart(2, "0") }}</td>
@@ -47,25 +46,6 @@
           </td>
 
           <td>
-            <label className="swap">
-              <input
-                aria-label="favorite"
-                :checked="pokemon.isFavorite"
-                type="checkbox"
-                @change="toggleFavoritePokemon(pokemon.id)"
-              />
-
-              <div className="swap-on text-5xl">😍</div>
-
-              <div className="swap-off text-5xl">🫥</div>
-            </label>
-          </td>
-
-          <td class="prose">{{ pokemon.height }} In</td>
-
-          <td class="prose">{{ pokemon.weight }} lb</td>
-
-          <td>
             <ul class="flex flex-wrap gap-1">
               <li
                 v-for="pokemonType in pokemon.types"
@@ -82,45 +62,19 @@
         </tr>
       </tbody>
     </table>
-
-    <div className="btn-group mt-2 mb-10">
-      <button @click="fetchPokemonPage(1)" className="btn">1</button>
-
-      <button
-        @click="fetchPokemonPage(page - 1)"
-        className="btn"
-        v-if="page > 1"
-      >
-        «
-      </button>
-
-      <button className="btn btn-disabled">page {{ page }}</button>
-
-      <button
-        @click="fetchPokemonPage(page + 1)"
-        className="btn"
-        v-show="page < totalPages - 1"
-      >
-        »
-      </button>
-
-      <button @click="fetchPokemonPage(totalPages)" className="btn">
-        {{ totalPages }}
-      </button>
-    </div>
   </main>
 </template>
 
-<script lang="ts" setup>
-import { storeToRefs } from "pinia";
+<script setup lang="ts">
 import pokeball from "../assets/pokeball.png";
-import { usePokemonStore } from "../store";
-import PokeDetailsAction from "./PokeDetailsAction.vue";
 import PokeType from "./PokeType.vue";
+import { usePokemonStore } from "../store";
+import { storeToRefs } from "pinia";
+import PokeDetailsAction from "./PokeDetailsAction.vue";
 
 const pokemonStore = usePokemonStore();
-const { fetchPokemonPage, toggleFavoritePokemon } = pokemonStore;
-await fetchPokemonPage(1);
+const { fetchFavoritePokemons } = pokemonStore;
+const { favoritePokemonsList } = storeToRefs(pokemonStore);
 
-const { page, pokemons, totalPages } = storeToRefs(pokemonStore);
+fetchFavoritePokemons();
 </script>

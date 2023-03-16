@@ -1,3 +1,4 @@
+import { nextTick } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import { LOCALSTORAGE } from "../constants";
 
@@ -21,6 +22,14 @@ const router = createRouter({
       },
     },
     {
+      path: "/favorite-pokemons",
+      name: "favorite-pokemons",
+      component: () => import("../views/FavoritePokemonView.vue"),
+      meta: {
+        title: "Favorite Pokemons",
+      },
+    },
+    {
       path: "/auth",
       name: "auth",
       component: () => import("../views/AuthView.vue"),
@@ -31,7 +40,7 @@ const router = createRouter({
   ],
 });
 
-router.beforeEach(async (to, from) => {
+router.beforeEach(async (to) => {
   const isAuthenticated: string =
     localStorage.getItem(LOCALSTORAGE.isAuthenticated) || "";
 
@@ -46,6 +55,13 @@ router.beforeEach(async (to, from) => {
   }
 
   return true;
+});
+
+router.afterEach((to) => {
+  nextTick(() => {
+    // @ts-ignore
+    document.title = to.meta.title || "Pokemon App";
+  });
 });
 
 export default router;

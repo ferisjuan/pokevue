@@ -12,10 +12,10 @@
     >
       <li v-for="pokemon in pokemonTypeahead" :key="pokemon.id">
         <a
-          @click="goToPokemonDetails(pokemon.id)"
-          class="menu-item prose text-xl capitalize"
-          >{{ pokemon.name }}</a
-        >
+          class="menu-item prose flex items-center justify-between text-xl capitalize"
+          >{{ pokemon.name }}
+          <PokeDetailsAction :id="pokemon.id" />
+        </a>
       </li>
     </ul>
   </section>
@@ -24,8 +24,9 @@
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
-import { useRouter } from "vue-router";
 import { usePokemonStore } from "../store";
+import PokeDetailsAction from "./PokeDetailsAction.vue";
+
 const pokemonSearchInput = ref("");
 
 const pokemonStore = usePokemonStore();
@@ -37,11 +38,4 @@ resetPokemonTypeAhead();
 watch(pokemonSearchInput, (newVal) => {
   searchPokemonTypeAhead(newVal);
 });
-
-const router = useRouter();
-const goToPokemonDetails = (id: number) =>
-  router.push({
-    name: "pokemon-details",
-    params: { id: String(id) },
-  });
 </script>

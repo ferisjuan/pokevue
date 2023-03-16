@@ -22,6 +22,15 @@
             </RouterLink>
           </li>
           <li>
+            <RouterLink
+              :to="{ name: 'favorite-pokemons' }"
+              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              active-class="text-gray-100"
+            >
+              Favorite
+            </RouterLink>
+          </li>
+          <li>
             <a
               href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
               class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"

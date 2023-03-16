@@ -1,13 +1,11 @@
 <template>
   <main class="container">
     <section class="flex items-center justify-between">
-      <h1 class="prose my-4 text-4xl font-bold">Pokemons!</h1>
-
-      <PokeSearch />
+      <h1 class="prose my-4 text-4xl font-bold">My favorite Pokemons!</h1>
     </section>
 
     <Suspense>
-      <PokeTable />
+      <PokeFavorite />
 
       <template #fallback>
         <div class="flex justify-center">
@@ -18,7 +16,6 @@
   </main>
 </template>
 
-<script lang="ts" setup>
-import PokeSearch from "../components/PokeSearch.vue";
-import PokeTable from "../components/PokeTable.vue";
+<script setup lang="ts">
+import PokeFavorite from "../components/PokeFavorite.vue";
 </script>

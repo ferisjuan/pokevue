@@ -15,9 +15,21 @@ export const usePokemonStore = defineStore("pokemon", () => {
   const _favorites = localStorage.getItem(FAVORITE_KEY);
   const favoritesList = _favorites ? JSON.parse(_favorites) : [];
   const favoritePokemons = ref<number[]>(favoritesList);
+  const favoritePokemonsList = ref<Pokemon[]>([]);
 
   const pokemons = ref<Pokemon[]>([]);
   const pokemonTypeahead = ref<Pokemon[]>([]);
+
+  const fetchFavoritePokemons = async (): Promise<void> => {
+    favoritePokemonsList.value = [];
+
+    favoritePokemons.value.forEach(async (pokemonId) => {
+      const response = await fetch(`${BASE_URL}/pokemon/${pokemonId}`);
+      const data = await response.json();
+
+      if (data) favoritePokemonsList.value.push(data);
+    });
+  };
 
   const fetchPokemonsList = async (): Promise<void> => {
     const response = await fetch(
@@ -107,6 +119,8 @@ export const usePokemonStore = defineStore("pokemon", () => {
 
   return {
     count,
+    favoritePokemonsList,
+    fetchFavoritePokemons,
     fetchPokemonPage,
     getPokemon,
     page,
