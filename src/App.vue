@@ -1,14 +1,30 @@
+<template>
+  <section class="him-h-screen font-Roboto flex flex-col">
+    <SiteNavigation />
+
+    <RouterView v-slot="{ Component }">
+      <Transition name="page" mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </RouterView>
+  </section>
+</template>
+
 <script setup lang="ts">
+import { Transition } from "vue";
 import SiteNavigation from "./components/SiteNavigation.vue";
 import { RouterView } from "vue-router";
 </script>
 
-<template>
-  <section class="flex flex-col him-h-screen font-Roboto">
-    <SiteNavigation />
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: 600ms ease all;
+}
 
-    <RouterView v-slot="{Component}" >
-      <component :is="Component" />
-    </RouterView>
-  </section>
-</template>
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+</style>
