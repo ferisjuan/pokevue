@@ -5,7 +5,7 @@ import type { Pokemon, Result } from "../types/pokemon.types";
 
 export const usePokemonStore = defineStore("pokemon", () => {
   const count = ref(0);
-  const limit = 10;
+  const limit = 20;
   const page = ref(0);
   const offset = ref(0);
   const pages = ref(new Map<number, Pokemon[]>());
@@ -17,6 +17,7 @@ export const usePokemonStore = defineStore("pokemon", () => {
   const favoritePokemons = ref<number[]>(favoritesList);
 
   const pokemons = ref<Pokemon[]>([]);
+  const pokemonTypeahead = ref<Pokemon[]>([]);
 
   const fetchPokemonsList = async (): Promise<void> => {
     const response = await fetch(
@@ -64,7 +65,7 @@ export const usePokemonStore = defineStore("pokemon", () => {
     const pokemon = pokemons.value.find((pokemon) => {
       return pokemon.id === id;
     });
-    console.log("🚀 ~ getPokemon ~ pokemon:", pokemon);
+
     return pokemon;
   };
 
@@ -87,12 +88,32 @@ export const usePokemonStore = defineStore("pokemon", () => {
     }
   };
 
+  const searchPokemonTypeAhead = (search: string): void => {
+    if (!search) pokemonTypeahead.value = [];
+
+    if (search.length === 0) {
+      pokemonTypeahead.value = [];
+      return;
+    }
+
+    pokemonTypeahead.value = pokemons.value.filter((pokemon) => {
+      return pokemon.name.includes(search);
+    });
+  };
+
+  const resetPokemonTypeAhead = (): void => {
+    pokemonTypeahead.value = [];
+  };
+
   return {
     count,
     fetchPokemonPage,
     getPokemon,
     page,
     pokemons,
+    pokemonTypeahead,
+    resetPokemonTypeAhead,
+    searchPokemonTypeAhead,
     toggleFavoritePokemon,
     totalPages,
   };

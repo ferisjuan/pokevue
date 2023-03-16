@@ -1,6 +1,11 @@
 <template>
   <main class="container">
-    <h1 class="prose my-4 text-4xl font-bold">Pokemons!</h1>
+    <section class="flex items-center justify-between">
+      <h1 class="prose my-4 text-4xl font-bold">Pokemons!</h1>
+
+      <PokeSearch />
+    </section>
+
     <Suspense>
       <PokeTable />
 
@@ -15,4 +20,5 @@
 
 <script lang="ts" setup>
 import PokeTable from "../components/PokeTable.vue";
+import PokeSearch from "../components/PokeSearch.vue";
 </script>
