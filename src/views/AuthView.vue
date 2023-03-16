@@ -42,11 +42,7 @@ const router = useRouter();
 
 const { login } = useAuthStore();
 
-type Credentials = {
-  username: string;
-  password: string;
-};
-const handleSubmit = async (credentials: Credentials) => {
+const handleSubmit = async (): Promise<void> => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
   login();
