@@ -12,9 +12,9 @@
     >
       <li v-for="pokemon in pokemonTypeahead" :key="pokemon.id">
         <a
+          @click="goToPokemonDetails(pokemon.id)"
           class="menu-item prose flex items-center justify-between text-xl capitalize"
           >{{ pokemon.name }}
-          <PokeDetailsAction :id="pokemon.id" />
         </a>
       </li>
     </ul>
@@ -24,6 +24,7 @@
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
+import { useGoToPokemonDetails } from "../composables";
 import { usePokemonStore } from "../store";
 import PokeDetailsAction from "./PokeDetailsAction.vue";
 
@@ -33,6 +34,8 @@ const pokemonStore = usePokemonStore();
 const { resetPokemonTypeAhead, searchPokemonTypeAhead } = pokemonStore;
 
 const { pokemonTypeahead } = storeToRefs(pokemonStore);
+
+const { goToPokemonDetails } = useGoToPokemonDetails();
 
 resetPokemonTypeAhead();
 watch(pokemonSearchInput, (newVal) => {

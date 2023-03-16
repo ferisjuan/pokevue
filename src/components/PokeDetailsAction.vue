@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { defineProps } from "vue";
-import { useRouter } from "vue-router";
+import { useGoToPokemonDetails } from "../composables";
 
 defineProps({
   id: {
@@ -15,10 +15,5 @@ defineProps({
   },
 });
 
-const router = useRouter();
-const goToPokemonDetails = (id: number) =>
-  router.push({
-    name: "pokemon-details",
-    params: { id: String(id) },
-  });
+const { goToPokemonDetails } = useGoToPokemonDetails();
 </script>
