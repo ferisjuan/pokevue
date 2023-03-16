@@ -12,6 +12,7 @@
           <th class="prose">Height</th>
           <th class="prose">Weight</th>
           <th class="prose">Types</th>
+          <th class="prose">Details</th>
         </tr>
       </thead>
 
@@ -21,6 +22,7 @@
           :key="pokemon.id"
         >
           <td>{{ String(pokemon.id).padStart(2, "0") }}</td>
+
           <td>
             <article class="flex items-center">
               <img
@@ -43,6 +45,7 @@
               <span class="prose text-3xl capitalize">{{ pokemon.name }} </span>
             </article>
           </td>
+
           <td>
             <label className="swap">
               <input
@@ -51,18 +54,35 @@
                 type="checkbox"
                 @change="toggleFavoritePokemon(pokemon.id)"
               />
+
               <div className="swap-on text-5xl">😍</div>
+
               <div className="swap-off text-5xl">🫥</div>
             </label>
           </td>
+
           <td class="prose">{{ pokemon.height }} In</td>
+
           <td class="prose">{{ pokemon.weight }} lb</td>
+
           <td>
             <ul class="flex flex-wrap gap-1">
-              <li v-for="type in pokemon.types" :key="type.type.name">
-                <PokeType :type="type.type.name" />
+              <li
+                v-for="pokemonType in pokemon.types"
+                :key="pokemonType.type.name"
+              >
+                <PokeType :type="pokemonType.type.name" />
               </li>
             </ul>
+          </td>
+
+          <td>
+            <div
+              @click="goToPokemonDetails(pokemon.id)"
+              class="prose cursor-pointer text-3xl"
+            >
+              ↗️
+            </div>
           </td>
         </tr>
       </tbody>
@@ -98,6 +118,7 @@
 
 <script lang="ts" setup>
 import { storeToRefs } from "pinia";
+import { useRouter } from "vue-router";
 import pokeball from "../assets/pokeball.png";
 import { usePokemonStore } from "../store";
 import PokeType from "./PokeType.vue";
@@ -107,4 +128,11 @@ const { fetchPokemonPage, toggleFavoritePokemon } = pokemonStore;
 await fetchPokemonPage(1);
 
 const { page, pokemons, totalPages } = storeToRefs(pokemonStore);
+
+const router = useRouter();
+const goToPokemonDetails = (id: number) =>
+  router.push({
+    name: "pokemon-details",
+    params: { id: String(id) },
+  });
 </script>

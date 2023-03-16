@@ -60,6 +60,14 @@ export const usePokemonStore = defineStore("pokemon", () => {
     fetchPokemonsList();
   };
 
+  const getPokemon = (id: number): Pokemon | undefined => {
+    const pokemon = pokemons.value.find((pokemon) => {
+      return pokemon.id === id;
+    });
+    console.log("🚀 ~ getPokemon ~ pokemon:", pokemon);
+    return pokemon;
+  };
+
   const toggleFavoritePokemon = (pokemonId: number): void => {
     if (_favorites) {
       if (favoritesList.includes(pokemonId)) {
@@ -82,6 +90,7 @@ export const usePokemonStore = defineStore("pokemon", () => {
   return {
     count,
     fetchPokemonPage,
+    getPokemon,
     page,
     pokemons,
     toggleFavoritePokemon,
