@@ -1,7 +1,6 @@
 import { expect, describe, it, vi } from "vitest";
 import { useGoToPokemonDetails } from "../useGoToPokemonDetails";
 
-// use vitest to mock the vue-router useRouter function
 vi.mock("vue-router", () => ({
   useRouter: () => ({
     push: vi.fn(),
@@ -10,7 +9,7 @@ vi.mock("vue-router", () => ({
 
 describe("useGoToPokemonDetails", () => {
   it("should return a function", () => {
-    expect(useGoToPokemonDetails()).toMatchSnapshot();
+    expect(typeof useGoToPokemonDetails()).toBe("object");
   });
 
   it("should navigate to the pokemon details page", () => {

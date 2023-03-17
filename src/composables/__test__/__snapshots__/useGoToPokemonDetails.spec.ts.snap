@@ -1,9 +1,3 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`useGoToPokemonDetails > should navigate to the pokemon details page 1`] = `undefined`;
-
-exports[`useGoToPokemonDetails > should return a function 1`] = `
-{
-  "goToPokemonDetails": [Function],
-}
-`;

@@ -5,6 +5,7 @@
         <RouterLink
           :to="{ name: 'home' }"
           class="flex items-center py-4 px-2 text-gray-100"
+          id="title"
         >
           <span class="prose text-xl font-bold tracking-tight">Pokevue</span>
         </RouterLink>
@@ -12,37 +13,40 @@
 
       <nav>
         <ul class="flex items-center text-sm text-gray-100">
-          <li>
+          <li v-if="isAuthenticated">
             <RouterLink
               :to="{ name: 'home' }"
-              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
               active-class="text-gray-100"
+              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              id="home"
             >
               Home
             </RouterLink>
           </li>
-          <li>
+          <li v-if="isAuthenticated">
             <RouterLink
               :to="{ name: 'favorite-pokemons' }"
-              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
               active-class="text-gray-100"
+              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              id="favorite"
             >
               Favorite
             </RouterLink>
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
               class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+              id="contact"
               target="_blank"
               >Contact</a
             >
           </li>
-          <li>
+          <li v-if="isAuthenticated">
             <RouterLink
               :to="{ name: 'auth' }"
               class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
-              v-show="isAuthenticated"
+              id="logout"
               @click="logout()"
             >
               Logout

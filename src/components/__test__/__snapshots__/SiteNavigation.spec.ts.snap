@@ -1,0 +1,2159 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SiteNavigation > should render 1`] = `
+VueWrapper {
+  "__app": {
+    "_component": {
+      "name": "VTU_ROOT",
+      "render": [Function],
+      "setup": [Function],
+    },
+    "_container": <div
+      data-v-app=""
+    >
+      <header
+        class="stiky top-0 bg-primary shadow-lg"
+      >
+        <div
+          class="container mx-auto flex items-center justify-between"
+        >
+          <div
+            class="flex"
+          >
+            <router-link-stub
+              class="flex items-center py-4 px-2 text-gray-100"
+              id="title"
+              to="[object Object]"
+            />
+          </div>
+          <nav>
+            <ul
+              class="flex items-center text-sm text-gray-100"
+            >
+              <!--v-if-->
+              <!--v-if-->
+              <li>
+                <a
+                  class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                  href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                  id="contact"
+                  target="_blank"
+                >
+                  Contact
+                </a>
+              </li>
+              <!--v-if-->
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>,
+    "_context": {
+      "app": [Circular],
+      "components": {
+        "transition": {
+          "name": "transition",
+        },
+        "transition-group": {
+          "name": "transition-group",
+        },
+      },
+      "config": {
+        "compilerOptions": {},
+        "errorHandler": undefined,
+        "globalProperties": {},
+        "isNativeTag": [Function],
+        "optionMergeStrategies": {},
+        "performance": false,
+        "warnHandler": undefined,
+      },
+      "directives": {},
+      "emitsCache": WeakMap {},
+      "mixins": [
+        {
+          "beforeCreate": [Function],
+        },
+      ],
+      "optionsCache": WeakMap {},
+      "propsCache": WeakMap {},
+      "provides": {},
+      "reload": [Function],
+    },
+    "_instance": {
+      "a": null,
+      "accessCache": {},
+      "appContext": {
+        "app": [Circular],
+        "components": {
+          "transition": {
+            "name": "transition",
+          },
+          "transition-group": {
+            "name": "transition-group",
+          },
+        },
+        "config": {
+          "compilerOptions": {},
+          "errorHandler": undefined,
+          "globalProperties": {},
+          "isNativeTag": [Function],
+          "optionMergeStrategies": {},
+          "performance": false,
+          "warnHandler": undefined,
+        },
+        "directives": {},
+        "emitsCache": WeakMap {},
+        "mixins": [
+          {
+            "beforeCreate": [Function],
+          },
+        ],
+        "optionsCache": WeakMap {},
+        "propsCache": WeakMap {},
+        "provides": {},
+        "reload": [Function],
+      },
+      "asyncDep": null,
+      "asyncResolved": false,
+      "attrs": {},
+      "bc": null,
+      "bm": null,
+      "bu": null,
+      "bum": null,
+      "c": null,
+      "components": null,
+      "ctx": {
+        "VTU_COMPONENT": {},
+      },
+      "da": null,
+      "data": {},
+      "devtoolsRawSetupState": {
+        "VTU_COMPONENT": RefImpl {
+          "__v_isRef": true,
+          "__v_isShallow": false,
+          "_rawValue": {},
+          "_value": {},
+          "dep": undefined,
+        },
+      },
+      "directives": null,
+      "ec": null,
+      "effect": ReactiveEffect {
+        "active": true,
+        "allowRecurse": true,
+        "deps": [
+          Set {
+            [Circular],
+          },
+          Set {
+            [Circular],
+          },
+          Set {
+            [Circular],
+          },
+        ],
+        "fn": [Function],
+        "onTrack": undefined,
+        "onTrigger": undefined,
+        "parent": undefined,
+        "scheduler": [Function],
+      },
+      "emit": [Function],
+      "emitsOptions": null,
+      "emitted": null,
+      "exposeProxy": null,
+      "exposed": null,
+      "inheritAttrs": undefined,
+      "isDeactivated": false,
+      "isMounted": true,
+      "isUnmounted": false,
+      "m": null,
+      "next": null,
+      "parent": null,
+      "props": {},
+      "propsDefaults": {},
+      "propsOptions": [
+        {},
+        [],
+      ],
+      "provides": {},
+      "proxy": {
+        "VTU_COMPONENT": {},
+      },
+      "refs": {
+        "VTU_COMPONENT": {},
+      },
+      "render": [Function],
+      "renderCache": [],
+      "root": [Circular],
+      "rtc": null,
+      "rtg": null,
+      "scope": EffectScope {
+        "_active": true,
+        "cleanups": [],
+        "detached": true,
+        "effects": [
+          ReactiveEffect {
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "parent": undefined,
+            "scheduler": [Function],
+          },
+        ],
+        "parent": undefined,
+      },
+      "setupContext": null,
+      "setupState": {
+        "VTU_COMPONENT": {},
+      },
+      "slots": {},
+      "sp": null,
+      "subTree": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": null,
+        "children": null,
+        "component": {
+          "a": null,
+          "accessCache": {},
+          "appContext": {
+            "app": [Circular],
+            "components": {
+              "transition": {
+                "name": "transition",
+              },
+              "transition-group": {
+                "name": "transition-group",
+              },
+            },
+            "config": {
+              "compilerOptions": {},
+              "errorHandler": undefined,
+              "globalProperties": {},
+              "isNativeTag": [Function],
+              "optionMergeStrategies": {},
+              "performance": false,
+              "warnHandler": undefined,
+            },
+            "directives": {},
+            "emitsCache": WeakMap {},
+            "mixins": [
+              {
+                "beforeCreate": [Function],
+              },
+            ],
+            "optionsCache": WeakMap {},
+            "propsCache": WeakMap {},
+            "provides": {},
+            "reload": [Function],
+          },
+          "asyncDep": null,
+          "asyncResolved": false,
+          "attrs": {},
+          "bc": null,
+          "bm": null,
+          "bu": null,
+          "bum": null,
+          "c": null,
+          "components": {},
+          "ctx": {
+            "_pStores": {
+              "auth": {
+                "$dispose": [Function],
+                "$id": "auth",
+                "$onAction": [Function],
+                "$patch": [Function],
+                "$reset": [Function],
+                "$subscribe": [Function],
+                "_customProperties": Set {},
+                "_hmrPayload": {
+                  "actions": {
+                    "login": [Function],
+                    "logout": [Function],
+                  },
+                  "getters": {},
+                  "hotState": RefImpl {
+                    "__v_isRef": true,
+                    "__v_isShallow": false,
+                    "_rawValue": {},
+                    "_value": {},
+                    "dep": undefined,
+                  },
+                  "state": [
+                    "isAuthenticated",
+                  ],
+                },
+                "_hotUpdate": [Function],
+                "_p": {
+                  "_a": null,
+                  "_e": EffectScope {
+                    "_active": true,
+                    "cleanups": [],
+                    "detached": true,
+                    "effects": [],
+                    "parent": undefined,
+                    "scopes": [
+                      EffectScope {
+                        "_active": true,
+                        "cleanups": [],
+                        "detached": false,
+                        "effects": [],
+                        "index": 0,
+                        "parent": [Circular],
+                      },
+                    ],
+                  },
+                  "_p": [],
+                  "_s": Map {
+                    "auth" => [Circular],
+                  },
+                  "install": [Function],
+                  "state": RefImpl {
+                    "__v_isRef": true,
+                    "__v_isShallow": false,
+                    "_rawValue": {
+                      "auth": {
+                        "isAuthenticated": RefImpl {
+                          "__v_isRef": true,
+                          "__v_isShallow": false,
+                          "_rawValue": false,
+                          "_value": false,
+                          "dep": Set {
+                            ReactiveEffect {
+                              "active": true,
+                              "allowRecurse": true,
+                              "deps": [
+                                [Circular],
+                              ],
+                              "fn": [Function],
+                              "onTrack": undefined,
+                              "onTrigger": undefined,
+                              "parent": undefined,
+                              "scheduler": [Function],
+                            },
+                          },
+                        },
+                      },
+                    },
+                    "_value": {
+                      "auth": {
+                        "isAuthenticated": false,
+                      },
+                    },
+                    "dep": undefined,
+                  },
+                  "use": [Function],
+                },
+                "isAuthenticated": false,
+                "login": [Function],
+                "logout": [Function],
+              },
+            },
+          },
+          "da": null,
+          "data": {},
+          "devtoolsRawSetupState": {
+            "RouterLink": [Function],
+            "authStore": {
+              "$dispose": [Function],
+              "$id": "auth",
+              "$onAction": [Function],
+              "$patch": [Function],
+              "$reset": [Function],
+              "$subscribe": [Function],
+              "_customProperties": Set {},
+              "_hmrPayload": {
+                "actions": {
+                  "login": [Function],
+                  "logout": [Function],
+                },
+                "getters": {},
+                "hotState": RefImpl {
+                  "__v_isRef": true,
+                  "__v_isShallow": false,
+                  "_rawValue": {},
+                  "_value": {},
+                  "dep": undefined,
+                },
+                "state": [
+                  "isAuthenticated",
+                ],
+              },
+              "_hotUpdate": [Function],
+              "_p": {
+                "_a": null,
+                "_e": EffectScope {
+                  "_active": true,
+                  "cleanups": [],
+                  "detached": true,
+                  "effects": [],
+                  "parent": undefined,
+                  "scopes": [
+                    EffectScope {
+                      "_active": true,
+                      "cleanups": [],
+                      "detached": false,
+                      "effects": [],
+                      "index": 0,
+                      "parent": [Circular],
+                    },
+                  ],
+                },
+                "_p": [],
+                "_s": Map {
+                  "auth" => [Circular],
+                },
+                "install": [Function],
+                "state": RefImpl {
+                  "__v_isRef": true,
+                  "__v_isShallow": false,
+                  "_rawValue": {
+                    "auth": {
+                      "isAuthenticated": RefImpl {
+                        "__v_isRef": true,
+                        "__v_isShallow": false,
+                        "_rawValue": false,
+                        "_value": false,
+                        "dep": Set {
+                          ReactiveEffect {
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              [Circular],
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "parent": undefined,
+                            "scheduler": [Function],
+                          },
+                        },
+                      },
+                    },
+                  },
+                  "_value": {
+                    "auth": {
+                      "isAuthenticated": false,
+                    },
+                  },
+                  "dep": undefined,
+                },
+                "use": [Function],
+              },
+              "isAuthenticated": false,
+              "login": [Function],
+              "logout": [Function],
+            },
+            "isAuthenticated": RefImpl {
+              "__v_isRef": true,
+              "__v_isShallow": false,
+              "_rawValue": false,
+              "_value": false,
+              "dep": Set {
+                ReactiveEffect {
+                  "active": true,
+                  "allowRecurse": true,
+                  "deps": [
+                    [Circular],
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "parent": undefined,
+                  "scheduler": [Function],
+                },
+              },
+            },
+            "logout": [Function],
+          },
+          "directives": null,
+          "ec": null,
+          "effect": ReactiveEffect {
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Set {
+                [Circular],
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "parent": undefined,
+            "scheduler": [Function],
+          },
+          "emit": [Function],
+          "emitsOptions": null,
+          "emitted": null,
+          "exposeProxy": {},
+          "exposed": {},
+          "inheritAttrs": undefined,
+          "isDeactivated": false,
+          "isMounted": true,
+          "isUnmounted": false,
+          "m": null,
+          "next": null,
+          "parent": [Circular],
+          "props": {},
+          "propsDefaults": {},
+          "propsOptions": [
+            {},
+            [],
+          ],
+          "provides": {},
+          "proxy": {
+            "_pStores": {
+              "auth": {
+                "$dispose": [Function],
+                "$id": "auth",
+                "$onAction": [Function],
+                "$patch": [Function],
+                "$reset": [Function],
+                "$subscribe": [Function],
+                "_customProperties": Set {},
+                "_hmrPayload": {
+                  "actions": {
+                    "login": [Function],
+                    "logout": [Function],
+                  },
+                  "getters": {},
+                  "hotState": RefImpl {
+                    "__v_isRef": true,
+                    "__v_isShallow": false,
+                    "_rawValue": {},
+                    "_value": {},
+                    "dep": undefined,
+                  },
+                  "state": [
+                    "isAuthenticated",
+                  ],
+                },
+                "_hotUpdate": [Function],
+                "_p": {
+                  "_a": null,
+                  "_e": EffectScope {
+                    "_active": true,
+                    "cleanups": [],
+                    "detached": true,
+                    "effects": [],
+                    "parent": undefined,
+                    "scopes": [
+                      EffectScope {
+                        "_active": true,
+                        "cleanups": [],
+                        "detached": false,
+                        "effects": [],
+                        "index": 0,
+                        "parent": [Circular],
+                      },
+                    ],
+                  },
+                  "_p": [],
+                  "_s": Map {
+                    "auth" => [Circular],
+                  },
+                  "install": [Function],
+                  "state": RefImpl {
+                    "__v_isRef": true,
+                    "__v_isShallow": false,
+                    "_rawValue": {
+                      "auth": {
+                        "isAuthenticated": RefImpl {
+                          "__v_isRef": true,
+                          "__v_isShallow": false,
+                          "_rawValue": false,
+                          "_value": false,
+                          "dep": Set {
+                            ReactiveEffect {
+                              "active": true,
+                              "allowRecurse": true,
+                              "deps": [
+                                [Circular],
+                              ],
+                              "fn": [Function],
+                              "onTrack": undefined,
+                              "onTrigger": undefined,
+                              "parent": undefined,
+                              "scheduler": [Function],
+                            },
+                          },
+                        },
+                      },
+                    },
+                    "_value": {
+                      "auth": {
+                        "isAuthenticated": false,
+                      },
+                    },
+                    "dep": undefined,
+                  },
+                  "use": [Function],
+                },
+                "isAuthenticated": false,
+                "login": [Function],
+                "logout": [Function],
+              },
+            },
+          },
+          "refs": {},
+          "render": [Function],
+          "renderCache": [],
+          "root": [Circular],
+          "rtc": null,
+          "rtg": null,
+          "scope": EffectScope {
+            "_active": true,
+            "cleanups": [],
+            "detached": true,
+            "effects": [
+              ReactiveEffect {
+                "active": true,
+                "allowRecurse": true,
+                "deps": [
+                  Set {
+                    [Circular],
+                  },
+                ],
+                "fn": [Function],
+                "onTrack": undefined,
+                "onTrigger": undefined,
+                "parent": undefined,
+                "scheduler": [Function],
+              },
+            ],
+            "parent": undefined,
+          },
+          "setupContext": {
+            "attrs": {},
+            "emit": [Function],
+            "expose": [Function],
+            "slots": {},
+          },
+          "setupState": {
+            "RouterLink": [Function],
+            "authStore": {
+              "$dispose": [Function],
+              "$id": "auth",
+              "$onAction": [Function],
+              "$patch": [Function],
+              "$reset": [Function],
+              "$subscribe": [Function],
+              "_customProperties": Set {},
+              "_hmrPayload": {
+                "actions": {
+                  "login": [Function],
+                  "logout": [Function],
+                },
+                "getters": {},
+                "hotState": RefImpl {
+                  "__v_isRef": true,
+                  "__v_isShallow": false,
+                  "_rawValue": {},
+                  "_value": {},
+                  "dep": undefined,
+                },
+                "state": [
+                  "isAuthenticated",
+                ],
+              },
+              "_hotUpdate": [Function],
+              "_p": {
+                "_a": null,
+                "_e": EffectScope {
+                  "_active": true,
+                  "cleanups": [],
+                  "detached": true,
+                  "effects": [],
+                  "parent": undefined,
+                  "scopes": [
+                    EffectScope {
+                      "_active": true,
+                      "cleanups": [],
+                      "detached": false,
+                      "effects": [],
+                      "index": 0,
+                      "parent": [Circular],
+                    },
+                  ],
+                },
+                "_p": [],
+                "_s": Map {
+                  "auth" => [Circular],
+                },
+                "install": [Function],
+                "state": RefImpl {
+                  "__v_isRef": true,
+                  "__v_isShallow": false,
+                  "_rawValue": {
+                    "auth": {
+                      "isAuthenticated": RefImpl {
+                        "__v_isRef": true,
+                        "__v_isShallow": false,
+                        "_rawValue": false,
+                        "_value": false,
+                        "dep": Set {
+                          ReactiveEffect {
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              [Circular],
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "parent": undefined,
+                            "scheduler": [Function],
+                          },
+                        },
+                      },
+                    },
+                  },
+                  "_value": {
+                    "auth": {
+                      "isAuthenticated": false,
+                    },
+                  },
+                  "dep": undefined,
+                },
+                "use": [Function],
+              },
+              "isAuthenticated": false,
+              "login": [Function],
+              "logout": [Function],
+            },
+            "isAuthenticated": false,
+            "logout": [Function],
+          },
+          "slots": {},
+          "sp": null,
+          "subTree": {
+            "__v_isVNode": true,
+            "__v_skip": true,
+            "anchor": null,
+            "appContext": null,
+            "children": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": {
+                          "default": [Function],
+                        },
+                        "component": {
+                          "a": null,
+                          "accessCache": {},
+                          "appContext": {
+                            "app": [Circular],
+                            "components": {
+                              "transition": {
+                                "name": "transition",
+                              },
+                              "transition-group": {
+                                "name": "transition-group",
+                              },
+                            },
+                            "config": {
+                              "compilerOptions": {},
+                              "errorHandler": undefined,
+                              "globalProperties": {},
+                              "isNativeTag": [Function],
+                              "optionMergeStrategies": {},
+                              "performance": false,
+                              "warnHandler": undefined,
+                            },
+                            "directives": {},
+                            "emitsCache": WeakMap {},
+                            "mixins": [
+                              {
+                                "beforeCreate": [Function],
+                              },
+                            ],
+                            "optionsCache": WeakMap {},
+                            "propsCache": WeakMap {},
+                            "provides": {},
+                            "reload": [Function],
+                          },
+                          "asyncDep": null,
+                          "asyncResolved": false,
+                          "attrs": {
+                            "class": "flex items-center py-4 px-2 text-gray-100",
+                            "id": "title",
+                            "to": {
+                              "name": "home",
+                            },
+                          },
+                          "bc": null,
+                          "bm": null,
+                          "bu": null,
+                          "bum": null,
+                          "c": null,
+                          "components": null,
+                          "ctx": {},
+                          "da": null,
+                          "data": {},
+                          "directives": null,
+                          "ec": null,
+                          "effect": ReactiveEffect {
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              Set {
+                                [Circular],
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "parent": undefined,
+                            "scheduler": [Function],
+                          },
+                          "emit": [Function],
+                          "emitsOptions": null,
+                          "emitted": null,
+                          "exposeProxy": null,
+                          "exposed": null,
+                          "inheritAttrs": undefined,
+                          "isDeactivated": false,
+                          "isMounted": true,
+                          "isUnmounted": false,
+                          "m": null,
+                          "next": null,
+                          "parent": [Circular],
+                          "props": {},
+                          "propsDefaults": {},
+                          "propsOptions": [
+                            {},
+                            [],
+                          ],
+                          "provides": {},
+                          "proxy": {},
+                          "refs": {},
+                          "render": [Function],
+                          "renderCache": [],
+                          "root": [Circular],
+                          "rtc": null,
+                          "rtg": null,
+                          "scope": EffectScope {
+                            "_active": true,
+                            "cleanups": [],
+                            "detached": true,
+                            "effects": [
+                              ReactiveEffect {
+                                "active": true,
+                                "allowRecurse": true,
+                                "deps": [
+                                  Set {
+                                    [Circular],
+                                  },
+                                ],
+                                "fn": [Function],
+                                "onTrack": undefined,
+                                "onTrigger": undefined,
+                                "parent": undefined,
+                                "scheduler": [Function],
+                              },
+                            ],
+                            "parent": undefined,
+                          },
+                          "setupContext": {
+                            "attrs": {
+                              "class": "flex items-center py-4 px-2 text-gray-100",
+                              "id": "title",
+                              "to": {
+                                "name": "home",
+                              },
+                            },
+                            "emit": [Function],
+                            "expose": [Function],
+                            "slots": {
+                              "default": [Function],
+                            },
+                          },
+                          "setupState": {},
+                          "slots": {
+                            "default": [Function],
+                          },
+                          "sp": null,
+                          "subTree": {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "ce": undefined,
+                            "children": null,
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <router-link-stub
+                              class="flex items-center py-4 px-2 text-gray-100"
+                              id="title"
+                              to="[object Object]"
+                            />,
+                            "key": null,
+                            "patchFlag": 16,
+                            "props": {
+                              "class": "flex items-center py-4 px-2 text-gray-100",
+                              "id": "title",
+                              "to": {
+                                "name": "home",
+                              },
+                            },
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 1,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "router-link-stub",
+                          },
+                          "suspense": null,
+                          "suspenseId": 0,
+                          "type": {
+                            "model": undefined,
+                            "name": "RouterLink",
+                            "props": {},
+                            "setup": [Function],
+                          },
+                          "u": null,
+                          "uid": 2,
+                          "um": null,
+                          "update": [Function],
+                          "vnode": [Circular],
+                          "withProxy": null,
+                        },
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <router-link-stub
+                          class="flex items-center py-4 px-2 text-gray-100"
+                          id="title"
+                          to="[object Object]"
+                        />,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "flex items-center py-4 px-2 text-gray-100",
+                          "id": "title",
+                          "to": {
+                            "name": "home",
+                          },
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 36,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": {
+                          "model": undefined,
+                          "name": "RouterLink",
+                          "props": {},
+                          "setup": [Function],
+                        },
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <div
+                      class="flex"
+                    >
+                      <router-link-stub
+                        class="flex items-center py-4 px-2 text-gray-100"
+                        id="title"
+                        to="[object Object]"
+                      />
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "flex",
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": "v-if",
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": <!--v-if-->,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 8,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": Symbol(Comment),
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": "v-if",
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": <!--v-if-->,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 8,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": Symbol(Comment),
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "ce": undefined,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "ce": undefined,
+                                "children": "Contact",
+                                "component": null,
+                                "ctx": null,
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el": <a
+                                  class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                                  href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                                  id="contact"
+                                  target="_blank"
+                                >
+                                  Contact
+                                </a>,
+                                "key": null,
+                                "patchFlag": 0,
+                                "props": {
+                                  "class": "prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100",
+                                  "href": "https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/",
+                                  "id": "contact",
+                                  "target": "_blank",
+                                },
+                                "ref": null,
+                                "scopeId": null,
+                                "shapeFlag": 9,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "a",
+                              },
+                            ],
+                            "component": null,
+                            "ctx": null,
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <li>
+                              <a
+                                class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                                href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                                id="contact"
+                                target="_blank"
+                              >
+                                Contact
+                              </a>
+                            </li>,
+                            "key": null,
+                            "patchFlag": -1,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "li",
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": "v-if",
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": <!--v-if-->,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 8,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": Symbol(Comment),
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <ul
+                          class="flex items-center text-sm text-gray-100"
+                        >
+                          <!--v-if-->
+                          <!--v-if-->
+                          <li>
+                            <a
+                              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                              href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                              id="contact"
+                              target="_blank"
+                            >
+                              Contact
+                            </a>
+                          </li>
+                          <!--v-if-->
+                        </ul>,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "flex items-center text-sm text-gray-100",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "ul",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <nav>
+                      <ul
+                        class="flex items-center text-sm text-gray-100"
+                      >
+                        <!--v-if-->
+                        <!--v-if-->
+                        <li>
+                          <a
+                            class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                            href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                            id="contact"
+                            target="_blank"
+                          >
+                            Contact
+                          </a>
+                        </li>
+                        <!--v-if-->
+                      </ul>
+                    </nav>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": null,
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "nav",
+                  },
+                ],
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  class="container mx-auto flex items-center justify-between"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <router-link-stub
+                      class="flex items-center py-4 px-2 text-gray-100"
+                      id="title"
+                      to="[object Object]"
+                    />
+                  </div>
+                  <nav>
+                    <ul
+                      class="flex items-center text-sm text-gray-100"
+                    >
+                      <!--v-if-->
+                      <!--v-if-->
+                      <li>
+                        <a
+                          class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                          href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                          id="contact"
+                          target="_blank"
+                        >
+                          Contact
+                        </a>
+                      </li>
+                      <!--v-if-->
+                    </ul>
+                  </nav>
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": {
+                  "class": "container mx-auto flex items-center justify-between",
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+            ],
+            "component": null,
+            "ctx": [Circular],
+            "dirs": null,
+            "dynamicChildren": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": {
+                  "default": [Function],
+                },
+                "component": {
+                  "a": null,
+                  "accessCache": {
+                    "@@__IMMUTABLE_ITERABLE__@@": 0,
+                    "@@__IMMUTABLE_RECORD__@@": 0,
+                    "_isMockFunction": 0,
+                    "constructor": 0,
+                    "toJSON": 0,
+                    Symbol(Symbol.toStringTag): 0,
+                  },
+                  "appContext": {
+                    "app": [Circular],
+                    "components": {
+                      "transition": {
+                        "name": "transition",
+                      },
+                      "transition-group": {
+                        "name": "transition-group",
+                      },
+                    },
+                    "config": {
+                      "compilerOptions": {},
+                      "errorHandler": undefined,
+                      "globalProperties": {},
+                      "isNativeTag": [Function],
+                      "optionMergeStrategies": {},
+                      "performance": false,
+                      "warnHandler": undefined,
+                    },
+                    "directives": {},
+                    "emitsCache": WeakMap {},
+                    "mixins": [
+                      {
+                        "beforeCreate": [Function],
+                      },
+                    ],
+                    "optionsCache": WeakMap {},
+                    "propsCache": WeakMap {},
+                    "provides": {},
+                    "reload": [Function],
+                  },
+                  "asyncDep": null,
+                  "asyncResolved": false,
+                  "attrs": {
+                    "class": "flex items-center py-4 px-2 text-gray-100",
+                    "id": "title",
+                    "to": {
+                      "name": "home",
+                    },
+                  },
+                  "bc": null,
+                  "bm": null,
+                  "bu": null,
+                  "bum": null,
+                  "c": null,
+                  "components": null,
+                  "ctx": {},
+                  "da": null,
+                  "data": {},
+                  "directives": null,
+                  "ec": null,
+                  "effect": ReactiveEffect {
+                    "active": true,
+                    "allowRecurse": true,
+                    "deps": [
+                      Set {
+                        [Circular],
+                      },
+                    ],
+                    "fn": [Function],
+                    "onTrack": undefined,
+                    "onTrigger": undefined,
+                    "parent": undefined,
+                    "scheduler": [Function],
+                  },
+                  "emit": [Function],
+                  "emitsOptions": null,
+                  "emitted": null,
+                  "exposeProxy": null,
+                  "exposed": null,
+                  "inheritAttrs": undefined,
+                  "isDeactivated": false,
+                  "isMounted": true,
+                  "isUnmounted": false,
+                  "m": null,
+                  "next": null,
+                  "parent": [Circular],
+                  "props": {},
+                  "propsDefaults": {},
+                  "propsOptions": [
+                    {},
+                    [],
+                  ],
+                  "provides": {},
+                  "proxy": {},
+                  "refs": {},
+                  "render": [Function],
+                  "renderCache": [],
+                  "root": [Circular],
+                  "rtc": null,
+                  "rtg": null,
+                  "scope": EffectScope {
+                    "_active": true,
+                    "cleanups": [],
+                    "detached": true,
+                    "effects": [
+                      ReactiveEffect {
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Set {
+                            [Circular],
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "parent": undefined,
+                        "scheduler": [Function],
+                      },
+                    ],
+                    "parent": undefined,
+                  },
+                  "setupContext": {
+                    "attrs": {
+                      "class": "flex items-center py-4 px-2 text-gray-100",
+                      "id": "title",
+                      "to": {
+                        "name": "home",
+                      },
+                    },
+                    "emit": [Function],
+                    "expose": [Function],
+                    "slots": {
+                      "default": [Function],
+                    },
+                  },
+                  "setupState": {},
+                  "slots": {
+                    "default": [Function],
+                  },
+                  "sp": null,
+                  "subTree": {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "ce": undefined,
+                    "children": null,
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <router-link-stub
+                      class="flex items-center py-4 px-2 text-gray-100"
+                      id="title"
+                      to="[object Object]"
+                    />,
+                    "key": null,
+                    "patchFlag": 16,
+                    "props": {
+                      "class": "flex items-center py-4 px-2 text-gray-100",
+                      "id": "title",
+                      "to": {
+                        "name": "home",
+                      },
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 1,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "router-link-stub",
+                  },
+                  "suspense": null,
+                  "suspenseId": 0,
+                  "type": {
+                    "model": undefined,
+                    "name": "RouterLink",
+                    "props": {},
+                    "setup": [Function],
+                  },
+                  "u": null,
+                  "uid": 2,
+                  "um": null,
+                  "update": [Function],
+                  "vnode": [Circular],
+                  "withProxy": null,
+                },
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <router-link-stub
+                  class="flex items-center py-4 px-2 text-gray-100"
+                  id="title"
+                  to="[object Object]"
+                />,
+                "key": null,
+                "patchFlag": 0,
+                "props": {
+                  "class": "flex items-center py-4 px-2 text-gray-100",
+                  "id": "title",
+                  "to": {
+                    "name": "home",
+                  },
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 36,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": {
+                  "model": undefined,
+                  "name": "RouterLink",
+                  "props": {},
+                  "setup": [Function],
+                },
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "v-if",
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": <!--v-if-->,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 8,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": Symbol(Comment),
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "v-if",
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": <!--v-if-->,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 8,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": Symbol(Comment),
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "v-if",
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": <!--v-if-->,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 8,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": Symbol(Comment),
+              },
+            ],
+            "dynamicProps": null,
+            "el": <header
+              class="stiky top-0 bg-primary shadow-lg"
+            >
+              <div
+                class="container mx-auto flex items-center justify-between"
+              >
+                <div
+                  class="flex"
+                >
+                  <router-link-stub
+                    class="flex items-center py-4 px-2 text-gray-100"
+                    id="title"
+                    to="[object Object]"
+                  />
+                </div>
+                <nav>
+                  <ul
+                    class="flex items-center text-sm text-gray-100"
+                  >
+                    <!--v-if-->
+                    <!--v-if-->
+                    <li>
+                      <a
+                        class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                        href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                        id="contact"
+                        target="_blank"
+                      >
+                        Contact
+                      </a>
+                    </li>
+                    <!--v-if-->
+                  </ul>
+                </nav>
+              </div>
+            </header>,
+            "key": null,
+            "patchFlag": 0,
+            "props": {
+              "class": "stiky top-0 bg-primary shadow-lg",
+            },
+            "ref": null,
+            "scopeId": null,
+            "shapeFlag": 17,
+            "slotScopeIds": null,
+            "ssContent": null,
+            "ssFallback": null,
+            "staticCount": 0,
+            "suspense": null,
+            "target": null,
+            "targetAnchor": null,
+            "transition": null,
+            "type": "header",
+          },
+          "suspense": null,
+          "suspenseId": 0,
+          "type": {
+            "__file": "/Users/juan/wsp/playground/pokevue/src/components/SiteNavigation.vue",
+            "__name": "SiteNavigation",
+            "components": {},
+            "render": [Function],
+            "setup": [Function],
+          },
+          "u": null,
+          "uid": 1,
+          "um": null,
+          "update": [Function],
+          "vnode": [Circular],
+          "withProxy": null,
+        },
+        "ctx": [Circular],
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <header
+          class="stiky top-0 bg-primary shadow-lg"
+        >
+          <div
+            class="container mx-auto flex items-center justify-between"
+          >
+            <div
+              class="flex"
+            >
+              <router-link-stub
+                class="flex items-center py-4 px-2 text-gray-100"
+                id="title"
+                to="[object Object]"
+              />
+            </div>
+            <nav>
+              <ul
+                class="flex items-center text-sm text-gray-100"
+              >
+                <!--v-if-->
+                <!--v-if-->
+                <li>
+                  <a
+                    class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                    href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                    id="contact"
+                    target="_blank"
+                  >
+                    Contact
+                  </a>
+                </li>
+                <!--v-if-->
+              </ul>
+            </nav>
+          </div>
+        </header>,
+        "key": null,
+        "patchFlag": 0,
+        "props": {
+          "ref": "VTU_COMPONENT",
+        },
+        "ref": {
+          "f": false,
+          "i": [Circular],
+          "k": undefined,
+          "r": "VTU_COMPONENT",
+        },
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "__file": "/Users/juan/wsp/playground/pokevue/src/components/SiteNavigation.vue",
+          "__name": "SiteNavigation",
+          "components": {},
+          "render": [Function],
+          "setup": [Function],
+        },
+      },
+      "suspense": null,
+      "suspenseId": 0,
+      "type": {
+        "name": "VTU_ROOT",
+        "render": [Function],
+        "setup": [Function],
+      },
+      "u": null,
+      "uid": 0,
+      "um": null,
+      "update": [Function],
+      "vnode": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": {
+          "app": [Circular],
+          "components": {
+            "transition": {
+              "name": "transition",
+            },
+            "transition-group": {
+              "name": "transition-group",
+            },
+          },
+          "config": {
+            "compilerOptions": {},
+            "errorHandler": undefined,
+            "globalProperties": {},
+            "isNativeTag": [Function],
+            "optionMergeStrategies": {},
+            "performance": false,
+            "warnHandler": undefined,
+          },
+          "directives": {},
+          "emitsCache": WeakMap {},
+          "mixins": [
+            {
+              "beforeCreate": [Function],
+            },
+          ],
+          "optionsCache": WeakMap {},
+          "propsCache": WeakMap {},
+          "provides": {},
+          "reload": [Function],
+        },
+        "children": null,
+        "component": [Circular],
+        "ctx": null,
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <header
+          class="stiky top-0 bg-primary shadow-lg"
+        >
+          <div
+            class="container mx-auto flex items-center justify-between"
+          >
+            <div
+              class="flex"
+            >
+              <router-link-stub
+                class="flex items-center py-4 px-2 text-gray-100"
+                id="title"
+                to="[object Object]"
+              />
+            </div>
+            <nav>
+              <ul
+                class="flex items-center text-sm text-gray-100"
+              >
+                <!--v-if-->
+                <!--v-if-->
+                <li>
+                  <a
+                    class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+                    href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+                    id="contact"
+                    target="_blank"
+                  >
+                    Contact
+                  </a>
+                </li>
+                <!--v-if-->
+              </ul>
+            </nav>
+          </div>
+        </header>,
+        "key": null,
+        "patchFlag": 0,
+        "props": null,
+        "ref": null,
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "name": "VTU_ROOT",
+          "render": [Function],
+          "setup": [Function],
+        },
+      },
+      "withProxy": null,
+    },
+    "_props": null,
+    "_uid": 0,
+    "component": [Function],
+    "config": {
+      "compilerOptions": {},
+      "errorHandler": undefined,
+      "globalProperties": {},
+      "isNativeTag": [Function],
+      "optionMergeStrategies": {},
+      "performance": false,
+      "warnHandler": undefined,
+    },
+    "directive": [Function],
+    "mixin": [Function],
+    "mount": [Function],
+    "provide": [Function],
+    "unmount": [Function],
+    "use": [Function],
+    "version": "3.2.47",
+  },
+  "__setProps": [Function],
+  "cleanUpCallbacks": [
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+  ],
+  "componentVM": {},
+  "isDisabled": [Function],
+  "rootVM": {
+    "VTU_COMPONENT": {},
+  },
+  "wrapperElement": <header
+    class="stiky top-0 bg-primary shadow-lg"
+  >
+    <div
+      class="container mx-auto flex items-center justify-between"
+    >
+      <div
+        class="flex"
+      >
+        <router-link-stub
+          class="flex items-center py-4 px-2 text-gray-100"
+          id="title"
+          to="[object Object]"
+        />
+      </div>
+      <nav>
+        <ul
+          class="flex items-center text-sm text-gray-100"
+        >
+          <!--v-if-->
+          <!--v-if-->
+          <li>
+            <a
+              class="prose border-b-4 border-transparent py-4 px-3 hover:border-gray-100"
+              href="https://www.linkedin.com/in/juan-carlos-feris-gomez-216a243/"
+              id="contact"
+              target="_blank"
+            >
+              Contact
+            </a>
+          </li>
+          <!--v-if-->
+        </ul>
+      </nav>
+    </div>
+  </header>,
+}
+`;

@@ -7,10 +7,11 @@
       type="form"
     >
       <FormKit
-        label-class="poke-input-label"
+        id="username"
         input-class="poke-input"
-        message-class="poke-input-message"
+        label-class="poke-input-label"
         label="Username"
+        message-class="poke-input-message"
         name="username"
         placeholder="ash@pokemon.com"
         type="text"

@@ -11,16 +11,17 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "tsc:check": "vue-tsc --noEmit",
-    "test:unit": "vitest --environment jsdom --root src/"
+    "test:unit": "vitest"
   },
   "dependencies": {
     "@formkit/vue": "^1.0.0-beta.15",
     "daisyui": "^2.51.3",
     "pinia": "^2.0.33",
-    "vue": "^3.2.25",
-    "vue-router": "4"
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@pinia/testing": "^0.0.15",
     "@tailwindcss/typography": "^0.5.9",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vue/test-utils": "^2.3.1",
